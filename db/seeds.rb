@@ -10,6 +10,12 @@
 require 'faker'
 
 10.times do
-  name = Faker::Name.first_name
-  User.create(first_name: name, email: "#{name}@yopmail.com")
+  users = User.all
+  Event.create(start_date: "2024-11-11",
+              title: "Event",
+              duration: 30,
+              description: "Event instance mass creation with random users",
+              price: 250,
+              location: "Paris #{rand(2..20)}ème",
+              admin_id: rand(1..users.length))
 end

@@ -71,3 +71,5 @@ gem "faker", "~> 3.2"
 gem "table_print", "~> 1.5"
 
 gem "timeliness", "~> 0.4.5"
+
+gem "dotenv-rails", "~> 3.0"
