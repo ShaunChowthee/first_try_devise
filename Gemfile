@@ -73,3 +73,5 @@ gem "table_print", "~> 1.5"
 gem "timeliness", "~> 0.4.5"
 
 gem "dotenv-rails", "~> 3.0"
+
+gem "devise", "~> 4.9"

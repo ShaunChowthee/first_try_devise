@@ -1,5 +1,5 @@
 class UserMailer < ApplicationMailer
-  default from: "no-reply@eventbrite_like.com"
+  default from: ENV['MAILJET_DEFAULT_FROM']
 
   def welcome_email(new_user)
     @user = new_user
